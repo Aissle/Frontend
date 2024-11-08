@@ -9,17 +9,40 @@
 <body>
     <P>hello</P>
 
-    <table border="1", align="centre" cellpadding = "3">
-        <--- caption, thead, tfoot, th --->
+    <table border="1", align="centre" cellpadding = "5" cellspacing = "2">
+        <!-- caption, thead, tfoot, th --->
+        <caption>This is the table caption</caption>
+        <thead>
+            <tr>
+                <td colspan="3">This is the header</td>
+            </tr>
+        </thead>
+        <tfoot> 
+            <tr>
+                <td colspan="3">This is the header</td>
+            </tr>
+        </tfoot>
         <tr>
-            <th>name</th>
-            <th>salary</th>
+            <th rowspan = "2">name</th>
+            <th colspan="2">salary</th>
         </tr>
         <tr>
-            <td>three</td>
-            <td>four
-        </td>
+            <th>current</th>
+            <th>old</th>
         </tr>
+        <tr>
+            <td>B</td>
+            <td>600</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>900</td>
+            <td>300</td>
+        </tr>
+
+        <a href="anotherPage.html"><img src="img/jessica-hearn-cH0NrLOjBLw-unsplash.jpg" alt="jessica-hearn-cH0NrLOjBLw-unsplash" height="20px" width="40px"></a>
+
     </table>
 </body>
 </html>
