@@ -6,6 +6,18 @@
     <title>Document</title>
     <meta http-equiv="refresh" content="4">
 </head>
-<body>
-    <P>hello</P>
-</body>
+
+    <frameset cols = "25%,50%,25%">
+        <frame slot name="1" arc="https://github.com" />
+        <frameset rows = "50%, *">
+            <frame slot name="2.1" arc="https://github.com" />
+            <frame slot name="2.2" arc="https://github.com" />
+        </frameset>
+        <frame slot name="3" arc="https://github.com" />
+
+    <noframes>
+        Your browser does not support this feature
+    </noframes>
+
+    </frameset>
+</html>
