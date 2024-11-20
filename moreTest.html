@@ -6,17 +6,107 @@
     <title>Main Pages</title>
     <meta http-equiv="refresh" content="300">
     <style type="text/css">
+        @font-face {
+            font-family: MyOwnFont;
+            src: url(./Fonts/junigarden_swash/JunigardenSwash_PERSONAL_USE_ONLY.otf);
+        }
         h2.first{
-            color: green;
-            font-weight: bolder;
-            font-stretch: expanded;
-            align-self: start;
-            font-size:large;
+            font-family: myOwnFont;
+            height: 250px;
+            width: 250px;
+            border-radius: 30px 5px;
+            background-color: aqua;
+            align-content: center;
         }
         h2.second{
-            font-size: larger;
-            font-variant-numeric: diagonal-fractions;
+            height: 250px;
+            width: 250px;
+            border-radius: 100px;
+            background-color: aqua;
+            align-content: center;
         }
+        p.one{
+            border-image: url(./media/jessica-hearn-cH0NrLOjBLw-unsplash.jpg);
+            border-width: 300px;
+            background: -webkit-radial-gradient(red, green);
+            background: -o-radial-gradient(red, green);
+            background: -moz-radial-gradient(red, green);
+            background: -repeating-radial-gradient(red, green);
+        }
+
+        div#one{
+            margin: 100px;
+            padding: 30px;
+            width: 100px;
+            height: 200px;
+            background-color: bisque;
+            border: 2px solid red;
+            transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            -webkit-transform: rotate(20deg); /*safari*/
+        }
+        div#two{
+            margin: 100px;
+            padding: 30px;
+            width: 100px;
+            height: 200px;
+            background-color: rgb(63, 174, 98);
+            border: 2px solid red;
+            transform:skewx(20deg);
+            transform:skewy(20deg);
+         }
+        /*div#three{
+            margin: 100px;
+            padding: 30px;
+            width: 100px;
+            height: 200px;
+            background-color: bisque;
+            border: 2px solid red;
+         } */
+         div#three{
+            position: relative;
+            margin: 100px;
+            padding: 30px;
+            width: 100px;
+            height: 200px;
+            background-color: bisque;
+            border: 2px solid red;
+            -webkit-animation-name: Aminat;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-delay: 2s;
+            -webkit-animation-iteration-count: 3;
+            animation-name: Aminat;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+         } 
+         @-webkit-keyframes Aminat {
+            0% {background-color: bisque; left: 0px; top: 0px;}
+            25% {background-color: bisque; left: 70px; top: 0px;}
+            50% {background-color: rgb(0, 255, 89);  left: 70px; top: 70px;}
+            100% {background-color: rgba(217, 80, 80, 0.725); left: 0px; top: 70px;}
+        }
+        @keyframes Aminat {
+            0% {background-color: bisque; left: 0px; top: 0px;}
+            25% {background-color: rgb(25, 0, 189); left: 70px; top: 0px;}
+            50% {background-color: rgb(0, 255, 89);  left: 70px; top: 70px;}
+            75% {background-color: rgba(217, 80, 80, 0.725); left: 0px; top: 70px;}
+            100% {background-color: bisque; left: 0px; top: 0px;}
+        }
+        .columns {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+            column-gap: 40px;
+
+            column-rule-style: dotted;
+        }
+
+       
 
     </style>
     <!-- methods for adding style - inline, embedding, linking, importing-->
@@ -27,5 +117,10 @@
     <body>
         <h2 class = "first">helloooooo</h2>
         <h2 class = "second">helloooooo</h2>
+        <p class = "one">hello</p>
+        <div id="one">testing!</div>
+        <div id="two">testing!</div>
+        <div id="three">testing!</div>
+        <p class="columns">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </body>
 </html>
