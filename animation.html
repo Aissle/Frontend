@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var arr = new Array("./media/img (1).jpg", "./media/img (2).jpg", "./media/img (3).jpg", "./media/img (4).jpg");
+        var i = 1;
+        var ref;
+        function picLibaray()
+        {
+            document.images[0].src = arr[i];
+            i++;
+            if(i > 3)
+                i = 0;
+        }
+        function start()
+        {
+            ref = setInterval("picLibaray()", 1000);
+        }
+        function stop()
+        {
+            clearInterval(ref);
+        }
+    </script>
+</head>
+<body>
+    <img style="height: 650px; " src="./media/img (1).jpg" name="img1" onmouseover="stop()" onmouseout="start()">
+</body>
+</html>
