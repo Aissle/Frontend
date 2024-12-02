@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image maps</title>
+    <script type="text/javascript">
+        function ShowTutorial(name)
+        {
+            document.myform.stage.value= name
+        }
+    </script>
+</head>
+    <body>
+        <form action="" name="myform">
+            <input type="text" name="stage">
+        </form>
+        <img style="height: 600px;"  src="./media/img (1).jpg" alt="HTML map" border="0" usemap="#tutorials">
+
+        <map name="tutorials">
+            <area shape="poly" coords="74, 0, 113, 29,98,72,38,27" 
+            href="http://www.google.com" alt="google.com"
+            target="_self"
+            onMouseOver="ShowTutorial('polygon')"
+            onMouseOut = "ShowTutorial('')">
+
+            <area shape="rect" coords="22, 83, 126, 125" 
+            href="http://www.youtube.com" alt="youtube.com"
+            target="_self"
+            onMouseOver="ShowTutorial('rectangle')"
+            onMouseOut = "ShowTutorial('')">
+
+            <area shape="circle" coords=" 73,168, 32" 
+            href="https://drive.google.com" alt="drive.com"
+            target="_self"
+            onMouseOver="ShowTutorial('circle')"
+            onMouseOut = "ShowTutorial('')">
+        </map> 
+    </body>
+</html>
